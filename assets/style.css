@@ -1,0 +1,480 @@
+@font-face {
+    font-family: 'Roboto-Black';
+    src: url('font/Roboto-Black.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('font/Roboto-Regular.ttf') format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto-Regular', sans-serif;
+    background-color: #FEFBF6;
+    overflow-x: hidden;
+}
+
+/* awal header */
+header {
+    width: 100%;
+    margin-bottom: 10px;
+    display: inline;
+}
+
+nav {
+    background-color: white;
+    display: flex;
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+    border-bottom: 2px solid #1363DF;
+    z-index: 1;
+    padding: 5px 40px;
+}
+
+/* logo */
+nav .logo h1 span {
+    font-size: 16px;
+    position: absolute;
+    top: 25px;
+    color: #06283D;
+}
+
+nav .logo h1 a {
+    font-family: 'Roboto-Black';
+    color: #1363DF;
+    float: left;
+    font-size: 50px;
+    font-weight: bold;
+    border: none;
+}
+
+nav ul {
+    margin: 10px 0;
+    display: flex;
+}
+
+nav li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+nav a {
+    font-family: 'Roboto-Regular';
+    color: #06283D;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+nav .menu a:hover, nav .menu a:focus {
+    font-weight: bold;
+    color: #1363DF;
+    padding: 3px;
+    transition: .3s;
+    border-bottom: 2px solid #1363DF;
+}
+
+.tombol-menu {
+    display: none;
+}
+
+div ul .button {
+    border: 2px solid #1363DF;
+    border-radius: 15px;
+    padding: 5px 15px;
+}
+
+div ul .button:hover, div ul .button:focus {
+    color: white;
+    background-color: #1363DF;
+    border-radius: 15px;
+    padding: 5px 15px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Roboto-Regular';
+    background-image: url("img/wisata.jpg");
+    background-size: cover;
+    height: 87vh;
+}
+
+.container h1 {
+    margin: 10px 350px;
+    font-family: 'Roboto-Black';
+    font-size: 3em;
+    font-weight: lighter;
+    text-align: center;
+    color: white;
+}
+
+.container p {
+    margin: 10px 150px;
+    font-size: 1.1em;
+    line-height: 30px;
+    color: white;
+}
+/* akhir header */
+
+/* awal main */
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 20px;
+    margin-top: 10px;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin: 0 10px;
+    padding: 10px;
+    background-color: white;
+}
+.box {
+    margin: 0 30px 30px;
+}
+
+/* awal konten */
+#content {
+    display: flex;
+    flex-direction: column;
+}
+
+#favorit, #profil, #wisata, #kontak {
+    margin: 50px 0 0; 
+    padding-top: 80px;
+}
+
+h2 {
+    font-size: 1.5em;
+    text-align: center;
+    color: #1363DF;
+    margin-top: 10px;
+}
+h3 {
+    font-size: 1.2em;
+    color: #06283D;
+}
+p {
+    font-size: .9em;
+}
+.card p {
+    font-size: 13px;
+}
+
+/* Awal Style Wisata */
+#content .wisata-favorit {
+    display: flex;
+    margin-top: 50px;
+}
+
+.wisata-favorit .favorit {
+    background-color: #DFF6FF;
+    flex-grow: 1;
+}
+
+.animasi:hover {
+    scale: 105%;
+    transition: .2s;
+    box-shadow: 0 2px 8px 0 rgba(71, 181, 255, 0.6);
+}
+
+.wisata-favorit .favorit img {
+    width: 100%;
+}
+
+.wisata-favorit .favorit h3, #wisata h3 {
+    text-align: center;
+    margin: 15px 0 5px;
+}
+/* Awal Style Wisata */
+
+/* awal style profil */
+#content .profil-bulukumba {
+    display: flex;
+    flex-direction: column;
+    margin: 35px 20px 0;
+}
+
+.profil-bulukumba .profil {
+    display: flex;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.profil-bulukumba img {
+    flex-basis: 25%;
+    width: 25%;
+    height: 25%;
+    padding: 0px 20px 0 0;
+}
+
+.profil-bulukumba .artikel {
+    flex-basis: 75%;
+}
+
+.profil-bulukumba .artikel h3 {
+    margin-bottom: 10px;
+}
+/* akhir style profil */
+
+/* Awal style Jenis Wisata  */
+#content .kuliner-dan-alam {
+    display: flex;
+    flex-direction: column;
+}
+
+#content .baris {
+    display: flex;
+}
+
+.kuliner-dan-alam .wisata img {
+    width: 100%;
+}
+
+.judul-wisata {
+    margin: 70px 30px 40px;
+}
+
+.wisata h4 {
+    text-align: center;
+    margin: 10px 0 5px;
+    color: #47B5FF;
+}
+
+#content .wisata-budaya {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 50px 30px 110px;
+}
+.wisata-budaya .artikel h4 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.wisata-budaya .artikel {
+    flex-basis: 25%;
+    padding: 100px 50px 100px 0;
+}
+.wisata-budaya .gambar {
+    flex-basis: 75%;
+    background-image: url("img/kawasan-adat-ammatoa.jpeg");
+    background-size: cover;
+}
+/* Akhir style Jenis Wisata  */
+
+/* ----------- :: Akhir Konten :: ----------- */
+
+/* awal sidebar */
+aside {
+    background-color: #DFF6FF;
+}
+
+#biodata {
+    display: flex;
+    margin-top: 30px;
+    padding: 0 0 40px;
+}
+
+#biodata section {
+    flex-grow: 1;
+    padding: 10px 80px;
+    margin: 10px 50px;
+    background-color: #DFF6FF;
+}
+
+aside h2 {
+    margin-top: 0px;
+}
+#biodata h3 {
+    text-align: center;
+    border-bottom: 2px solid #06283D;
+    padding: 15px 5px;
+}
+#biodata img{
+    display: block;
+    width: 10vmax;
+    border-radius: 50%;
+    margin: 20px auto 10px;
+} 
+#biodata table {
+    margin: 20px auto 10px;
+}
+#biodata table th, #biodata td {
+    text-align: left;
+    padding: 5px ;
+    font-size: .9em;
+}
+/* akhir sidebar */
+
+/* .........:: Akhir Main ::......... */
+
+
+footer {
+    background-color: #1363DF;
+    width: 100%;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+
+/* ------ Tampilan Tablet ------ */
+@media screen and (max-width: 768px) {
+    .container h1 {
+        margin: 0px 80px;
+        font-size: 2.3em;
+    }
+    .container p {
+        margin: 30px 70px;
+        font-size: 1em;
+        line-height: 22px;
+    }
+    .media-flex-column {
+        flex-direction: column;
+    }
+    nav li {
+        padding: 8px 5px;
+    }
+    nav a {
+        font-size: 10px;
+    }
+    h2 {
+        font-size: 1.4em;
+    }
+    h3 {
+        font-size: 1.1em;
+    }
+    .card p, p {
+        font-size: 14px;
+    }
+    .profil-bulukumba img {
+        margin: 0 auto 10px;
+        width: 35%;
+        padding: 0;
+    }
+    .profil-bulukumba h3 {
+        text-align: center;
+    }
+    .wisata-budaya .artikel {
+        flex-basis: 40%;
+        padding: 0 10px 0 0;
+        font-size: .8em;
+    }
+    .wisata-budaya .gambar {
+        flex-basis: 60%;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    #biodata section {
+        margin: 0 90px 40px;
+        padding: 10px 30px;
+    }
+    #biodata table th, #biodata td {
+        font-size: 12px;
+        padding: 3px;
+    }
+    footer {
+        font-size: 10px;
+        padding: 20px 100px;
+        line-height: 22px;
+    }
+}
+
+
+/* ------ Tampilan Mobile ------ */
+@media screen and (max-width: 576px) {
+    .container h1 {
+        margin: 0px 60px;
+        font-size: 2.5em;
+    }
+    .container p {
+        margin: 30px 50px;
+        font-size: 1.1em;
+        line-height: 22px;
+    }
+    nav li {
+        padding: 10px;
+    }
+    
+    nav a {
+        font-size: 12px;
+    }
+
+    /* Tombol-Menu */    
+    .tombol-menu {
+        display: inline;
+        position: absolute;
+        right: 40px;
+        top: 20px;
+        border: none;
+        border-radius: 50px;
+        padding: 7px 10px;
+        font-family: 'Roboto-Black', sans-serif;
+        font-size: 14px;
+        color: white;
+        background-color: #1363DF;
+        cursor: pointer;
+        box-shadow: 0px 1px 0px 1px rgba(0, 0, 0, 0.6);
+    }
+    .tombol-menu:hover, .tombol-menu:focus {
+        background-color: #06283D;    
+        color: #DFF6FF;
+        box-shadow: none;
+    }
+    .menu {
+        background-color: #DFF6FF;
+        position: absolute;
+        display: flex;
+        right: 0;
+        top: 73px;
+        left: 250px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        padding: 10px 20px;
+        border-radius: 10px;
+        display: none;
+        transition: all 1s;
+        opacity: 0;
+    }
+    .menu ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    .aktif {
+        display: block;
+        opacity: 1;
+    }
+    /* Akhir Tombol-Menu */    
+
+    .card p, p {
+        font-size: 13px;
+    }
+    #biodata section {
+        margin: 0 40px 40px;
+        padding: 10px 30px;
+    }
+    #biodata table th, #biodata td {
+        font-size: 12px;
+        padding: 3px;
+    }
+    footer {
+        font-size: 14px;
+        padding: 20px 50px;
+    }
+}
+
+/* Akhir Media Query */
